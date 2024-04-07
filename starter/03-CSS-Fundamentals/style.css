@@ -36,13 +36,31 @@ li {
   font-size: 20px;
 }
 
-footer p {
+/* footer p {
+  font-size: 16px;
+} */
+
+/* we want only one paragraph inside the header which are inside of articles to be italic. */
+/* So this actually work, but we now even more encoding the html structure into out css selector. 
+and that make code hard to maintain in the future if we ever change html that not a good idea*/
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
   font-size: 16px;
 }
 
-/* we want only one paragraph iside the header which are inside of articles to be italic. */
-/* So this actually work, but we now even more encoding the html structure into out css selector. 
-and that make code hard to maintain in the future if we ever change html that not a good idea*/
-article header p {
-  font-style: italic;
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bullet-remove {
+  list-style: none;
 }
