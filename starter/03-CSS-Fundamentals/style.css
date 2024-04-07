@@ -5,6 +5,16 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
+}
+
+/* Notice: h1,h2,h3,h4,p,li selector before we use grey color, 
+but another h1,g2,h3 selector after we use pink color, so it will use the last one */
+
+h1,
+h2,
+h3 {
+  color: #ee55d4;
 }
 
 h1 {
@@ -12,6 +22,8 @@ h1 {
   text-transform: uppercase;
   font-style: italic;
 }
+
+/* if we have 2 color , it will use the last one. */
 
 h2 {
   font-size: 40px;
@@ -63,4 +75,18 @@ and that make code hard to maintain in the future if we ever change html that no
 
 .bullet-remove {
   list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #ee55d4;
+  border-bottom: 5px solid #ee55d4;
+}
+
+body {
+  /* background-color: aliceblue; */
 }
