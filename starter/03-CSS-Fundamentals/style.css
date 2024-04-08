@@ -113,12 +113,40 @@ li:nth-child(even) {
   color: rgb(49, 185, 56);
 } */
 
+/*Misconception: this won't work */
 /* this is a descendant elector */
 /* this not work because p element is the first p element in article, but p element is not first element (first-child) in article. first child is header element. */
 article p:first-child {
   color: red;
 }
 
-article p:last-child {
+/* article p:last-child {
   color: red;
+} */
+
+/* a {
+  color: red;
+} */
+
+/* Styling links LVHA*/
+/* specify the link pseudo-class, this will then only target actual link*/
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  font-weight: bold;
+  color: orangered;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: aquamarine;
+  font-style: italic;
 }
