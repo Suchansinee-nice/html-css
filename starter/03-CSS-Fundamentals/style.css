@@ -159,17 +159,16 @@ a:active {
 /* this 4 rules that are applying to that element */
 /* #copyright {
   color: red;
-}
-
-.copyright {
-  color: blue;
-}
-
-.text {
-  color: yellow;
-}
-
-footer p {
-  corlor: green;
-  /* color: green !important; */
 } */
+
+/* .copyright {
+  color: blue;
+} */
+
+/* .text {
+  color: yellow;
+} */
+
+/*footer p {
+  color: green;
+} */ /* color: green !important; */
