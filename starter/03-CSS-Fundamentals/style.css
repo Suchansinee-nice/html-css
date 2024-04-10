@@ -1,11 +1,34 @@
+* {
+  /* color property does not inherited to body element, So all text will be pink color not grey color. - misunderstand*/
+  /* if body do not have color, color pink inherit to body element - misunderstand*/
+
+  /* if body do not have color property , color pink will apply because universal selector is the lowest priority, if no color property in body, So the color in * will applied
+  actually all of property applied , จริงๆไม่เกี่ยวกับว่า ถ้า element selector ไม่มี color แล้ว universal จะขึ้นมาทำแทน คือ property มีตรงไหนมันทำหมด แต่ถ้าอันไหนมันมีซ้ำกัน conflict กัน มันจะเลือกตาม priority*/
+
+  /* แต่ทำไมอันนี้มันใช้ color ของ universal แทน body วะ? */
+  /* color: #f37ac5; */
+
+  /* border-top: 10px solid #1098ad; */
+}
+
+body {
+  /* color grey are 1st priority more than pink from universal selector */
+  color: #444;
+  font-family: sans-serif;
+
+  /* border-top on body is red because it has higher priority than universla selector */
+  border-top: 10px solid red;
+}
+
 h1,
 h2,
 h3,
 h4,
 p,
 li {
-  font-family: sans-serif;
-  color: #444;
+  /* Noted: If we use inherited and overwritten value in child element. it will come to concept 'conflict value', So the last one that will get applied. */
+  /* font-family: serif; */
+  /* color: #444; */
 }
 
 /* Notice: h1,h2,h3,h4,p,li selector before we use grey color, 
@@ -172,3 +195,16 @@ a:active {
 /*footer p {
   color: green;
 } */ /* color: green !important; */
+
+/* inheritance */
+/* default font is 16px */
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
+
+nav {
+  font-size: 18px;
+  /* The p is nested deeper down (in the HTML file) than the nav. Thus p elements nested inside of nav elements are more influenced by the p styling than the nav styling.  */
+}
