@@ -150,3 +150,26 @@ a:active {
   background-color: aquamarine;
   font-style: italic;
 }
+
+/* a {
+  color: palevioletred;
+} */
+
+/* Resolving conflict */
+/* this 4 rules that are applying to that element */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  corlor: green;
+  /* color: green !important; */
+} */
