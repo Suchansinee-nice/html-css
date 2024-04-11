@@ -6,6 +6,7 @@
   actually all of property applied , จริงๆไม่เกี่ยวกับว่า ถ้า element selector ไม่มี color แล้ว universal จะขึ้นมาทำแทน คือ property มีตรงไหนมันทำหมด แต่ถ้าอันไหนมันมีซ้ำกัน conflict กัน มันจะเลือกตาม priority*/
 
   /* แต่ทำไมอันนี้มันใช้ color ของ universal แทน body วะ? */
+  /* universal มันใช้กับทุก element แล้วถ้าเกิดมันไป conflict กับอันอื่นจะใช้อันไหน อันที่สูงกว่า หรือ ใช้ตัวมันด้วยเพราะมันใช้กับทุก element */
   /* color: #f37ac5; */
 
   /* border-top: 10px solid #1098ad; */
