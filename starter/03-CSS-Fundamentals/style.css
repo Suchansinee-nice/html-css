@@ -7,6 +7,7 @@
 
   /* แต่ทำไมอันนี้มันใช้ color ของ universal แทน body วะ? */
   /* universal มันใช้กับทุก element แล้วถ้าเกิดมันไป conflict กับอันอื่นจะใช้อันไหน อันที่สูงกว่า หรือ ใช้ตัวมันด้วยเพราะมันใช้กับทุก element */
+  /* conclusion:  The universal selector has the least priority of the methods of direct selection, but any method of direct selection has priority over inherited values, such as those inherited from the body. */
   /* color: #f37ac5; */
 
   /* border-top: 10px solid #1098ad; */
@@ -27,7 +28,7 @@ h3,
 h4,
 p,
 li {
-  /* Noted: If we use inherited and overwritten value in child element. it will come to concept 'conflict value', So the last one that will get applied. */
+  /* Noted: If we use inherited and overwritten value in child element. it will come to concept 'conflict value', So the last one that will get applied. -misundestand */
   /* font-family: serif; */
   /* color: #444; */
 }
@@ -209,3 +210,11 @@ nav {
   font-size: 18px;
   /* The p is nested deeper down (in the HTML file) than the nav. Thus p elements nested inside of nav elements are more influenced by the p styling than the nav styling.  */
 }
+
+/* universal selector */
+/* * {
+  color: red;
+}
+p {
+  color: blue;
+} */
