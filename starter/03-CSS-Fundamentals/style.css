@@ -11,6 +11,9 @@
   /* color: #f37ac5; */
 
   /* border-top: 10px solid #1098ad; */
+
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -19,7 +22,39 @@ body {
   font-family: sans-serif;
 
   /* border-top on body is red because it has higher priority than universla selector */
-  border-top: 10px solid red;
+  border-top: 10px solid #1098ad;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+/* move to top because it's bigger element */
+nav {
+  font-size: 18px;
+  /* The p is nested deeper down (in the HTML file) than the nav. Thus p elements nested inside of nav elements are more influenced by the p styling than the nav styling.  */
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #ee55d4;
+  border-bottom: 5px solid #ee55d4;
+  padding: 50px 0;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
 }
 
 h1,
@@ -52,10 +87,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -67,10 +105,22 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
 }
 
 /* footer p {
@@ -100,16 +150,6 @@ and that make code hard to maintain in the future if we ever change html that no
 
 .bullet-remove {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #ee55d4;
-  border-bottom: 5px solid #ee55d4;
 }
 
 body {
@@ -205,11 +245,6 @@ a:active {
 nav p {
   font-size: 18px;
 } */
-
-nav {
-  font-size: 18px;
-  /* The p is nested deeper down (in the HTML file) than the nav. Thus p elements nested inside of nav elements are more influenced by the p styling than the nav styling.  */
-}
 
 /* universal selector */
 /* * {
