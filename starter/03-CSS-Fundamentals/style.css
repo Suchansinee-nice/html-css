@@ -16,6 +16,7 @@
   padding: 0;
 }
 
+/* PAGE SECTION */
 body {
   /* color grey are 1st priority more than pink from universal selector */
   color: #444;
@@ -66,6 +67,7 @@ aside {
   padding-bottom: 50px; */
 }
 
+/* SMALLER ELEMENT */
 h1,
 h2,
 h3,
@@ -228,6 +230,13 @@ a:active {
 /* a {
   color: palevioletred;
 } */
+
+nav a:link {
+  background-color: yellow;
+  margin: 20px;
+  padding: 20px;
+  /* display: block; */
+}
 
 /* Resolving conflict */
 /* this 4 rules that are applying to that element */
