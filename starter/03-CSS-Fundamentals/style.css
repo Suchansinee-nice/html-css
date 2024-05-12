@@ -128,6 +128,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -236,6 +237,14 @@ nav a:link {
   margin: 20px;
   padding: 20px;
   display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 /* Resolving conflict */
@@ -276,4 +285,5 @@ p {
   /* width: 800px; */
   width: 100%;
   height: auto;
+  /* margin: 100px; */
 }
