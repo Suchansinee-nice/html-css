@@ -16,7 +16,7 @@
   padding: 0;
 }
 
-/* PAGE SECTION */
+/* PAGE SECTION - all the big dividing pieces of our page. */
 body {
   /* color grey are 1st priority more than pink from universal selector */
   color: #444;
@@ -238,9 +238,9 @@ nav a:link {
   padding: 20px;
   display: block; */
 
-  margin-right: 30px;
+  /* margin-right: 30px;
   margin-top: 10px;
-  display: inline-block;
+  display: inline-block; */
 }
 
 nav a:link:last-child {
