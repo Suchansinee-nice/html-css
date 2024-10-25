@@ -24,6 +24,7 @@ body {
 
   /* border-top on body is red because it has higher priority than universla selector */
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -31,6 +32,7 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  /* position: relative; */
 }
 
 .main-header {
@@ -296,7 +298,8 @@ p {
 /* top: 50px; */
 
 /* move from bottom 50px from position of html code , when we expand or shrink size of page, element will stay same position*/
-/* bottom: 50px; */
+/* bottom: 50px;
+  left: 50px; */
 /* } */
 
 button {
@@ -306,7 +309,11 @@ button {
 
   position: absolute;
 
-  /* move from bottom 50px - view port (visible part of the page) , when we expand or shrink size of page , element will move*/
+  /* move from bottom 50px - show in view port (visible part of the page) , when we expand or shrink size of page , element will move*/
+  /* bottom: 50px;
+  left: 50px; */
+
+  /* So again, it moves it to this place in the view port, but we want it down here, so from the page. */
   bottom: 50px;
-  left: 50px;
+  right: 50px;
 }
