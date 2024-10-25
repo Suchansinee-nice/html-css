@@ -289,3 +289,24 @@ p {
   height: auto;
   /* margin: 100px; */
 }
+
+/* button { */
+/* position: relative; */
+/* nothing change , it's depend on position html code */
+/* top: 50px; */
+
+/* move from bottom 50px from position of html code , when we expand or shrink size of page, element will stay same position*/
+/* bottom: 50px; */
+/* } */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+
+  /* move from bottom 50px - view port (visible part of the page) , when we expand or shrink size of page , element will move*/
+  bottom: 50px;
+  left: 50px;
+}
