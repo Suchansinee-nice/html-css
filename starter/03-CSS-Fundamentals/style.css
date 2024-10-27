@@ -260,9 +260,13 @@ h2::first-letter {
   font-size: 80px;
 }
 
-p::first-line {
+h3 + p::first-line {
   color: red;
 }
+
+/* p::first-line {
+  color: red;
+} */
 
 /* Resolving conflict */
 /* this 4 rules that are applying to that element */
