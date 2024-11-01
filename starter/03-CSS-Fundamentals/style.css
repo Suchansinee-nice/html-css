@@ -49,7 +49,7 @@ body {
 nav {
   font-size: 18px;
   /* The p is nested deeper down (in the HTML file) than the nav. Thus p elements nested inside of nav elements are more influenced by the p styling than the nav styling.  */
-  text-align: center;
+  /* text-align: center; */
 }
 
 article {
