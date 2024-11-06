@@ -109,7 +109,10 @@ li:last-child {
 
 .color {
   /* if have width and heigh use inline-block */
-  display: inline;
+  /* if you use inline then you don't see color because inline is occupy for it content 
+  , but this is no content it's only background color. If we have content such as text it will show color */
+  /* we use inline-block, it's will show color because it's occupy not only content. whcih background is part of padding. */
+  display: inline-block;
   margin-right: 10px;
 }
 
