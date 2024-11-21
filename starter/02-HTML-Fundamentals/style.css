@@ -101,17 +101,25 @@ li:last-child {
   font-weight: bold;
   letter-spacing: 2px;
   display: inline-block;
+  /* default p is block display */
   padding: 3px 10px;
   position: absolute;
   top: -15px;
   left: -30px;
+  /* width: 40px;
+  text-align: center; */
 }
 
 .color {
   /* if have width and heigh use inline-block */
   /* if you use inline then you don't see color because inline is occupy for it content 
-  , but this is no content it's only background color. If we have content such as text it will show color */
-  /* we use inline-block, it's will show color because it's occupy not only content. whcih background is part of padding. */
+  , but this is no content. If we have content such as text it will show color. 
+  or we can set width and height, it's part of content. but you have to use inline-block.*/
+
+  /* or another way, we move width and height into .color seletor and if we have width and height mean we have content and we must use inline-block not inline.
+  because width and height can not use in inline-element */
+
+  /* when we use inline-block, it's will show color because we have width and height. It's part of content. it's occupy only content. */
   display: inline-block;
   margin-right: 10px;
 }
